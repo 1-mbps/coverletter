@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage[margin=1in]{geometry} % Set 1-inch margins
+\usepackage{graphicx} % Required for inserting images
+\pagestyle{empty}
+
+\newcommand{\contact}[3]{{#1} \hspace{0.05em} \href{#2}{#3} \newline}
+
+%%%%%%%%% Company-specific info %%%%%%%%%
+\newcommand{\companyname}{}
+\newcommand{\position}{}
+
+\begin{document}
+
+\noindent\begin{minipage}[t]{0.3\textwidth}
+  \vspace{0pt}
+  \begin{flushleft}
+      {\LARGE \textbf{Lucas Khan}} \newline
+      {\large Mathematics Student, University of Waterloo} \newline \newline
+      \contact{\faEnvelopeSquare}{mailto:lfkhan@uwaterloo.ca}{lfkhan@uwaterloo.ca}
+      \contact{\faLinkedinSquare}{https://linkedin.com/in/lucas-khan-101a51253}{lucas-khan-101a51253}
+      \contact{\faGithubSquare}{https://github.com/1-mbps}{1-mbps}
+  \end{flushleft}
+\end{minipage}%
+\hspace{0.07\textwidth}% Adjust the gap between columns
+\begin{minipage}[t]{0.63\textwidth}
+  \vspace{0pt}
+  \rule{\linewidth}{3px} % 3px black line at the top
+  \newline \newline
+  Dear hiring manager:
+  \newline \newline
+  Greetings! My name is Lucas Khan, and I am a second-year mathematics student at the University of Waterloo. I’m writing to express my interest in your opening for a \position this coming summer.
+  \newline \newline
+  I think I would be a good fit for this role because of my experience having ownership over machine learning products with wide reach. In my most recent role at the Region of Waterloo, I led development on two new projects. The first, an education tool powered by large language models, will soon be rolled out to several schools around the regional municipality of Waterloo. Meanwhile, the second, a web scraper, is an integral part of a natural-language chatbot that will soon be added to many regional government websites. I think that this experience leading end-to-end machine learning projects that address a wide variety of problems would be a valuable asset to your team at \companyname.
+  % I think that I would be a good fit for this consulting role because I have experience applying machine learning techniques to specific problems posed by a wide variety of clients. In my most recent role at the Region of Waterloo, I led development on two new projects. The first, an education tool powered by large language models, will soon be rolled out to several schools around the regional municipality of Waterloo. Meanwhile, the second, a web scraper, is an integral part of a natural-language chatbot that will soon be added to many regional government websites. I also worked on a machine learning project (in high school) that won awards at science fairs in Singapore, Indonesia, and Malaysia.
+  \newline \newline
+  Additionally, I have around five years of experience programming in Python, which I used in my most recent job and in programming competitions I’ve joined since high school. I competed at the national level in programming contests in the Philippines (where I grew up), and also participated in some of my country’s training camps for the International Olympiad in Informatics.
+  \newline \newline
+  Thank you for taking the time to read this letter. The opportunity to work on exciting and innovative technology like yours is the reason why I’m pursuing a career in software development, and so I very much hope that you will consider my application.
+  \newline \newline
+  Sincerely,
+  \newline \newline \newline \newline
+  Lucas Khan
+  % \lipsum[2] % Content for the second column
+\end{minipage}
+
+\end{document}

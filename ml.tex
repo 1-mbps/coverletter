@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage[margin=1in]{geometry} % Set 1-inch margins
+\usepackage{graphicx} % Required for inserting images
+\pagestyle{empty}
+
+\newcommand{\contact}[3]{{#1} \hspace{0.05em} \href{#2}{#3} \newline}
+
+%%%%%%%%% Company-specific info %%%%%%%%%
+\newcommand{\companyname}{}
+\newcommand{\position}{}
+
+\begin{document}
+
+\noindent\begin{minipage}[t]{0.3\textwidth}
+  \vspace{0pt}
+  \begin{flushleft}
+      {\LARGE \textbf{Lucas Khan}} \newline
+      {\large Mathematics Student, University of Waterloo} \newline \newline
+      \contact{\faEnvelopeSquare}{mailto:lfkhan@uwaterloo.ca}{lfkhan@uwaterloo.ca}
+      \contact{\faLinkedinSquare}{https://linkedin.com/in/lucas-khan-101a51253}{lucas-khan-101a51253}
+      \contact{\faGithubSquare}{https://github.com/1-mbps}{1-mbps}
+  \end{flushleft}
+\end{minipage}%
+\hspace{0.07\textwidth}% Adjust the gap between columns
+\begin{minipage}[t]{0.63\textwidth}
+  \vspace{0pt}
+  \rule{\linewidth}{3px} % 3px black line at the top
+  \newline \newline
+  Dear hiring manager:
+  \newline \newline
+  Greetings! My name is Lucas Khan, and I am a second-year mathematics student at the University of Waterloo. I’m writing to express my interest in your opening for a \position this coming summer.
+  \newline \newline
+  I've been working on machine learning projects for around four years. I was first exposed to the field in high school, where, for a science project, I developed machine learning algorithms for detecting (based on their vital signs) potentially critical patients in hospital emergency rooms. With this project, I was able to represent my school in science fairs in Singapore, Taiwan, and Malaysia, and was fortunate enough to win a few awards.
+  \newline \newline
+  Since entering university, I've worked as a natural language processing engineer at the Region of Waterloo. During my time there, I worked with large language models, leading development on an education chatbot that will soon be rolled out to several schools around the regional municipality of Waterloo. I also worked on a natural language chatbot that will soon be added to many regional government websites. I think that this experience working on machine learning projects with wide reach would prove useful in this role at \companyname.
+  \newline \newline
+  Thank you for taking the time to read this letter. [last_line]
+  \newline \newline
+  Sincerely,
+  \newline \newline \newline
+  Lucas Khan
+  % \newline \newline \small \textit{Note: in case this is relevant, I am legally authorized to work in the US.}
+\end{minipage}
+
+\end{document}

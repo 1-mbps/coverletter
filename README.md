@@ -1,7 +1,6 @@
 # coverletter
 
-Prerequisites:
--LaTeX: https://www.latex-project.org/get/
+This project requires LaTeX. You can install it here: https://www.latex-project.org/get/
 
 After that's installed, run
 ```

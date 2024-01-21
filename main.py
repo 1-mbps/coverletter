@@ -22,6 +22,8 @@ def main():
     for position_type in last_lines:
         position = position.replace(position_type, "")
 
+    position = position.replace("-usa", "")
+
     #Select appropriate LaTeX document for type of job
     if pos_type in ['ml', 'ds', 'se']:
         filepath = pos_type+".tex"
